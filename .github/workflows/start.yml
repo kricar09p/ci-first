@@ -23,5 +23,5 @@ jobs:
         echo "$SSH_KEY" > ~/.ssh/key
         chmod 600 ~/.ssh/key
         rsync -rv --exclude=.git \
-          -e "ssh -i ~/.ssh/key -p 3305 -o StrictHostKeyChecking=no" \
-          $GITHUB_WORKSPACE/ bernd@komplett.cc:/var/www/test/
+          -e "ssh -i ~/.ssh/key -o StrictHostKeyChecking=no" \
+          $GITHUB_WORKSPACE/ deploy@server.com:/var/www/test/

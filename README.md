@@ -1,2 +1,2 @@
 # ci-first
-CI Pipeline mit actions
+CI Pipeline with GitHub actions
